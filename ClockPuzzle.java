@@ -30,7 +30,10 @@ public class ClockPuzzle {
 		this.minutes = minutes;
 	}
 	
-	
+	public double getClockAngle(){
+		return 270.00;
+		
+	}
 	
 	
 
