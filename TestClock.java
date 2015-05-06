@@ -40,4 +40,38 @@ public class TestClock extends TestCase {
 	
 	}
 	
+	@Test
+	public void testGetClockAngleFail(){
+		clock.setHours(13);
+		clock.setMinutes(0);
+		assertEquals(clock.getClockAngle(),-1.0);
+	
+	}
+	
+	@Test
+	public void testGetClockAngle9_30(){
+		clock.setHours(9);
+		clock.setMinutes(30);
+		assertEquals(clock.getClockAngle(),255.0);
+	
+	}
+
+	
+	@Test
+	public void testGetClockAngle4_15(){
+		clock.setHours(4);
+		clock.setMinutes(15);
+		assertEquals(clock.getClockAngle(),322.5);
+	
+	}
+
+	
+	@Test
+	public void testGetClockAngle4_45(){
+		clock.setHours(4);
+		clock.setMinutes(45);
+		assertEquals(clock.getClockAngle(),232.5);
+	
+	}
+
 }
