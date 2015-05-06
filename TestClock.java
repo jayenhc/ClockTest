@@ -19,6 +19,14 @@ public class TestClock extends TestCase {
 	@Test
 	public void testClockObjNotNull(){
 		assertNotNull(clock);
-		
 	}
+	
+	@Test
+	public void testPrintTime(){
+		clock.setHours(10);
+		clock.setMinutes(10);
+		assertEquals(clock.getTime(),"10:10");
+	}
+	
+	
 }
